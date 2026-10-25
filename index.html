@@ -1,55 +1,11 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="일상과 개발, 여행의 기록을 담은 개인 블로그" />
-  <title>쉼표 — 나의 기록</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#home" aria-label="쉼표 홈">쉼표<span>.</span></a>
-      <nav class="main-nav" aria-label="주 메뉴">
-        <a href="#home">홈</a><a href="#posts">글 목록</a><a href="#about">소개</a><a href="admin.html">글 작성</a>
-      </nav>
-      <button id="themeToggle" class="icon-btn" type="button" aria-label="다크 모드 전환" title="테마 전환">☾</button>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">MY LITTLE CORNER OF THE INTERNET</p>
-        <h1>느리게 읽고,<br /><em>오래 기억할</em> 이야기.</h1>
-        <p class="hero-desc">개발하며 배운 것, 여행에서 발견한 풍경, 평범한 날의 생각까지. 조금씩 쌓아가는 나만의 기록입니다.</p>
-        <a class="primary-btn" href="#posts">글 둘러보기 <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-one"></div><div class="hill hill-two"></div><div class="art-caption">notes on everyday life ✳</div></div>
-    </section>
-
-    <section id="posts" class="posts-section container">
-      <div class="section-top"><div><p class="eyebrow">THE JOURNAL</p><h2>최근 이야기</h2></div><p id="resultCount" class="result-count" aria-live="polite"></p></div>
-      <div class="toolbar">
-        <div class="filters" role="group" aria-label="카테고리 필터">
-          <button class="filter active" data-category="전체" aria-pressed="true">전체</button>
-          <button class="filter" data-category="개발" aria-pressed="false">개발</button>
-          <button class="filter" data-category="일상" aria-pressed="false">일상</button>
-          <button class="filter" data-category="여행" aria-pressed="false">여행</button>
-        </div>
-        <label class="search-wrap"><span aria-hidden="true">⌕</span><span class="sr-only">글 검색</span><input id="searchInput" type="search" placeholder="제목이나 내용 검색..." autocomplete="off" /></label>
-      </div>
-      <div id="postGrid" class="post-grid"></div>
-      <p id="emptyState" class="empty-state" hidden>검색 결과가 없습니다. 다른 검색어를 입력해 보세요.</p>
-    </section>
-
-    <section id="about" class="about-section"><div class="container about-inner"><div><p class="eyebrow">ABOUT THIS SPACE</p><h2>안녕하세요, 기록하는 사람입니다.</h2></div><div><p>작은 호기심에서 출발한 이야기들을 남깁니다. 완벽한 답보다 꾸준한 시도, 빠른 결과보다 그 과정에서 배운 것을 좋아해요.</p><a href="mailto:hello@example.com">이메일 보내기 ↗</a></div></div></section>
-  </main>
-
-  <footer class="site-footer container"><a class="logo" href="#home">쉼표<span>.</span></a><span>© <span id="year"></span> 쉼표. All rights reserved.</span><a href="#home">맨 위로 ↑</a></footer>
-
-  <dialog id="postDialog" class="post-dialog" aria-labelledby="dialogTitle"><div class="dialog-head"><span id="dialogCategory" class="tag"></span><button id="closeDialog" class="icon-btn" type="button" aria-label="글 닫기">✕</button></div><article><h2 id="dialogTitle"></h2><p id="dialogDate" class="dialog-date"></p><img id="dialogImage" class="dialog-image" alt="" hidden /><div id="dialogBody" class="dialog-body"></div></article></dialog>
-</body>
-</html>
+<!doctype html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090e23"><meta name="description" content="사메코(さめこ)를 응원하는 비공식 팬 페이지. 음악 감상, 팬아트, 심해의 꿈을 담았습니다."><title>SAMEKO — 深海の夢 | 비공식 팬 페이지</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body>
+<div class="ocean-glow" aria-hidden="true"></div><header class="site-header"><div class="container header-inner"><a class="logo" href="#home"><span class="logo-mark">✦</span> SAMEKO<span class="logo-dot">.</span></a><nav class="main-nav" aria-label="주 메뉴"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#gallery">GALLERY</a><a href="#posts">JOURNAL</a><a href="admin.html">ADMIN</a></nav><button id="themeToggle" class="icon-btn" aria-label="테마 전환" type="button">☀</button></div></header>
+<main id="home"><section class="hero"><div class="hero-background" role="img" aria-label="상어와 별이 떠다니는 꿈 같은 보랏빛 심해 일러스트"></div><div class="hero-shade"></div><div class="hero-content container"><div class="tiny-overline"><span class="live-dot"></span> AN UNOFFICIAL FAN ARCHIVE <span class="star-line">✦ DEEP BLUE DREAM ✦</span></div><p class="hero-jp">深海に、夢を見つけに。</p><h1>WELCOME TO<br><span>SAMEKO'S SEA</span><i>✦</i></h1><p class="hero-description">작은 상어가 헤엄치는 우주 같은 바다.<br>사메코를 좋아하는 마음을 모아 만든 팬의 작은 공간입니다.</p><div class="hero-actions"><a class="primary-btn" href="#gallery">꿈의 바다 둘러보기 <span>↗</span></a><a class="ghost-btn" href="#posts">팬 기록 읽기 ↓</a></div></div><div class="hero-bottom container"><span>01 — THE OCEAN OF DREAMS</span><span>SCROLL TO EXPLORE ↓</span></div></section>
+<section id="about" class="intro-section container"><div class="intro-kicker"><span class="eyebrow">ABOUT SAMEKO</span><div class="orbit">✧ <span>✦</span> ✧</div></div><div class="intro-layout"><div><h2>파도 너머,<br><em>사메코의 세계로.</em></h2><p class="japanese-sub">さめこ · 深海 · 夢</p></div><div class="intro-text"><p>사메코(さめこ)의 바다에서 영감을 받은 비공식 팬 페이지입니다. 좋아하는 음악에서 떠오르는 감정, 물속의 별빛 같은 이미지, 팬의 소소한 기록을 이곳에 모았습니다.</p><p>이 페이지에 담긴 그림은 이전에 함께 만든 <strong>꿈속의 심해 시리즈</strong>를 사용했습니다. 공식 정보와 팬의 창작·감상은 구분해 소개합니다.</p><div class="tag-row"><span>🦈 SHARK</span><span>🫧 DEEP SEA</span><span>✧ DREAM</span></div></div></div></section>
+<section class="feature-section container"><div class="feature-image"><img src="assets/dream-05.webp" alt="파란 머리 캐릭터가 작은 상어와 함께 꿈의 바다를 여행하는 장면" loading="lazy"></div><div class="feature-copy"><p class="eyebrow">A LITTLE NOTE</p><p class="quote-mark">“</p><h2>보잘것없다고<br>생각했던 모습도<br><em>누군가에겐 아름답기를.</em></h2><p>깊고 조용한 바다처럼, 있는 그대로의 자신이 편안할 수 있는 곳. 노래에서 받은 인상을 팬의 언어로 표현했습니다.</p><span>— A FAN'S INTERPRETATION</span></div></section>
+<section id="gallery" class="gallery-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">THE DREAM GALLERY</p><h2>꿈속의 장면들 <span>✦</span></h2><p class="section-desc">이전에 제작한 심해 일러스트 10장. 사진을 누르면 크게 볼 수 있어요.</p></div><span class="section-index">02 / 04</span></div><div class="gallery-grid" id="galleryGrid"></div></div></section>
+<section id="posts" class="posts-section container"><div class="section-heading"><div><p class="eyebrow">LETTERS FROM THE DEEP</p><h2>팬의 작은 기록 <span>✦</span></h2></div><span class="result-count" id="resultCount" aria-live="polite"></span></div><div class="toolbar"><div class="filters" role="group" aria-label="글 카테고리"><button class="filter active" data-category="전체" aria-pressed="true">ALL</button><button class="filter" data-category="음악 이야기" aria-pressed="false">음악 이야기</button><button class="filter" data-category="팬아트" aria-pressed="false">팬아트</button><button class="filter" data-category="팬 기록" aria-pressed="false">팬 기록</button></div><label class="search-wrap"><span aria-hidden="true">⌕</span><span class="sr-only">글 검색</span><input id="searchInput" type="search" placeholder="기록 검색..." autocomplete="off"></label></div><div class="post-grid" id="postGrid"></div><p class="empty-state" id="emptyState" hidden>일치하는 팬 기록이 없습니다.</p></section>
+<section class="closing"><div class="container closing-inner"><p class="eyebrow">SEE YOU IN THE DEEP</p><h2>오늘도, 꿈속에서<br><em>헤엄치기를.</em></h2><p>星の海で、また会おう。</p><a class="primary-btn" href="#home">처음으로 돌아가기 ↑</a></div></section></main>
+<footer class="site-footer container"><a class="logo" href="#home">✦ SAMEKO.</a><p>팬이 만든 비공식 페이지입니다. 아티스트 또는 관계자의 공식 사이트가 아닙니다.<br>© <span id="year"></span> Sameko Fan Archive · Fan-made artwork</p><a href="admin.html">관리자 편집 ↗</a></footer>
+<dialog id="postDialog" class="post-dialog" aria-labelledby="dialogTitle"><div class="dialog-head"><span id="dialogCategory" class="tag"></span><button id="closeDialog" class="icon-btn" type="button" aria-label="닫기">✕</button></div><article><h2 id="dialogTitle"></h2><p id="dialogDate" class="dialog-date"></p><img id="dialogImage" class="dialog-image" alt="" hidden><div id="dialogBody" class="dialog-body"></div></article></dialog>
+<dialog id="galleryDialog" class="gallery-dialog" aria-label="갤러리 이미지 보기"><button id="closeGallery" type="button" aria-label="이미지 닫기">✕</button><img id="galleryLarge" alt=""><div class="gallery-view-info"><span id="galleryCaption"></span><div><button id="galleryPrev" aria-label="이전 이미지" type="button">←</button><span id="galleryCounter"></span><button id="galleryNext" aria-label="다음 이미지" type="button">→</button></div></div></dialog></body></html>
