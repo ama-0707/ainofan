@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="일상과 개발, 여행의 기록을 담은 개인 블로그" />
+  <title>쉼표 — 나의 기록</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="쉼표 홈">쉼표<span>.</span></a>
+      <nav class="main-nav" aria-label="주 메뉴">
+        <a href="#home">홈</a><a href="#posts">글 목록</a><a href="#about">소개</a><a href="admin.html">글 작성</a>
+      </nav>
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="다크 모드 전환" title="테마 전환">☾</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">MY LITTLE CORNER OF THE INTERNET</p>
+        <h1>느리게 읽고,<br /><em>오래 기억할</em> 이야기.</h1>
+        <p class="hero-desc">개발하며 배운 것, 여행에서 발견한 풍경, 평범한 날의 생각까지. 조금씩 쌓아가는 나만의 기록입니다.</p>
+        <a class="primary-btn" href="#posts">글 둘러보기 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-one"></div><div class="hill hill-two"></div><div class="art-caption">notes on everyday life ✳</div></div>
+    </section>
+
+    <section id="posts" class="posts-section container">
+      <div class="section-top"><div><p class="eyebrow">THE JOURNAL</p><h2>최근 이야기</h2></div><p id="resultCount" class="result-count" aria-live="polite"></p></div>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="카테고리 필터">
+          <button class="filter active" data-category="전체" aria-pressed="true">전체</button>
+          <button class="filter" data-category="개발" aria-pressed="false">개발</button>
+          <button class="filter" data-category="일상" aria-pressed="false">일상</button>
+          <button class="filter" data-category="여행" aria-pressed="false">여행</button>
+        </div>
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><span class="sr-only">글 검색</span><input id="searchInput" type="search" placeholder="제목이나 내용 검색..." autocomplete="off" /></label>
+      </div>
+      <div id="postGrid" class="post-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>검색 결과가 없습니다. 다른 검색어를 입력해 보세요.</p>
+    </section>
+
+    <section id="about" class="about-section"><div class="container about-inner"><div><p class="eyebrow">ABOUT THIS SPACE</p><h2>안녕하세요, 기록하는 사람입니다.</h2></div><div><p>작은 호기심에서 출발한 이야기들을 남깁니다. 완벽한 답보다 꾸준한 시도, 빠른 결과보다 그 과정에서 배운 것을 좋아해요.</p><a href="mailto:hello@example.com">이메일 보내기 ↗</a></div></div></section>
+  </main>
+
+  <footer class="site-footer container"><a class="logo" href="#home">쉼표<span>.</span></a><span>© <span id="year"></span> 쉼표. All rights reserved.</span><a href="#home">맨 위로 ↑</a></footer>
+
+  <dialog id="postDialog" class="post-dialog" aria-labelledby="dialogTitle"><div class="dialog-head"><span id="dialogCategory" class="tag"></span><button id="closeDialog" class="icon-btn" type="button" aria-label="글 닫기">✕</button></div><article><h2 id="dialogTitle"></h2><p id="dialogDate" class="dialog-date"></p><img id="dialogImage" class="dialog-image" alt="" hidden /><div id="dialogBody" class="dialog-body"></div></article></dialog>
+</body>
+</html>
